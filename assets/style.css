@@ -164,7 +164,6 @@
 }
 
 .button {
-    border: none;
     color: white;
     padding: 16px 32px;
     text-align: center;
@@ -178,7 +177,9 @@
 
 
 .button_test {
-    background-color: #dddddd; 
+    background-color: #dddddd;
+    border: 0px solid black;
+    border-radius: 10px;
     color: black;
 }
 
