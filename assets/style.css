@@ -101,16 +101,16 @@
 
 @keyframes textanim {
     from {
-        content: "Denta";
+        content: "|";
     }
     to {
-        content: "dxtstd"
+        content: ""
     }
 }
 
 #home .content h1::after {
     content: "";
-    animation: textanim 10s linear infinite;
+    animation: textanim 2s linear infinite;
 }
 
 #about {
