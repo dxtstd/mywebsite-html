@@ -5,8 +5,8 @@ async function sleep(s) {
 }
 
 const title = [
-    "DentaCH",
-    "under development"
+    "Denta💌",
+    "dxtstd website"
 ];
 let indexTitle = 0
 

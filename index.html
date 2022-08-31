@@ -4,10 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/image/icon.jpg">
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
-        <script src="assets/script/title.js"></script>
         
+        <link rel="icon" href="assets/image/icon.jpg">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        
+        <script src="assets/script/title.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title></title>
     </head>
     <body>
@@ -15,27 +22,53 @@
             <div class="navbar-menu">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#testing">Test</a>
             </div>
         </nav>
         <section id="home">
-            <div class="bg inner-width">
+            <div class="inner-width">
                 <div class="content">
                     <h1>I'm </h1>
+                    <div class="sm">
+                        <a href="https://www.facebook.com/DentaCH" class="fab fa-facebook-f"></a>
+                        <a href="https://wa.me/message/LMADJRVINXO2L1" class="fab fa-whatsapp"></a>
+                        <a href="https://www.instagram.com/denta.ft/" class="fab fa-instagram"></a>
+                    <!--
+                    <a href="https://www.youtube.com/channel/UCdxeDuS-IYuGvAP-7psBKmg" class="fab fa-youtube"></a>
+                    -->
+                    </div>
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="inner-width">
-                <h1 class="title">About</h1>
+                <strong> <h1 class="title">About</h1> </strong>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello, I'm Denta Fahriansyah Triyono, you can call me Denta</p>
+                        <p>I'm now 15yo and my birthday on 18 August</p>
+                    </div>
+                </div>
+                <br>
                 <p>this website is used for me to learn HTML, CSS, and JS</p>
+                <p>reference from <a href="https://xzqrnc.github.io">xzqrnc.github.io</a>
             </div>
         </section>
         <section id="testing">
             <div class="inner-width">
-                <h1 class="title">Testing HTML</h1>
-                <h3>Date: </h3>
-                <p id="clock" class="clock"></p>
-                <script src="assets/script/clock.js"></script>
+                <h1 class="title">Learn HTML</h1>
+                <div>
+                    <h3>Date: </h3>
+                    <p id="clock" class="clock"></p>
+                    <script src="assets/script/clock.js"></script>
+                </div>
+                <br>
+                <div>
+                    <script src="assets/script/top.js"></script>
+                    <h3>Button: </h3>
+                    <button class="button button_test" onclick="topFunction()">To top html</button>
+                </div>
+
             </div>
         </section>
     </body>

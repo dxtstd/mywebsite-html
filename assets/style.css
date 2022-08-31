@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700;900&display=swap");
+
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-family: 'Zen Old Mincho', serif;
+    box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+:root {
+  --clr: #ffffff;
 }
 
 .inner-width {
@@ -14,7 +23,6 @@
 }
 
 .navbar {
-    font-family: 'Sans-Serif';
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,7 +39,7 @@
 
 
 .navbar a {
-    padding: 16px 18px;
+    padding: 18px 18px;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -42,12 +50,8 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: var(--clr);
     color: black
-}
-.navbar a:focus {
-    background-color: #fff;
-    color: #333;
 }
 
 .navbar .active {
@@ -55,20 +59,26 @@
   color: white;
 }
 
+.sm a {
+    color: #fff;
+    font-size: 22px;
+    margin : 0 10px;
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+.sm a:hover {
+    transform: scale(2.0);
+    color: var(--clr);
+}
 
 #home {
-    font-family: 'Montserrat';
     font-size: 22px;
     height: 100vh;
     min-height: 500px;
-}
-
-
-#home .bg {
-    background-image: url("image/bg.png");
-    background-repeat: no-repeat;
-    background-size: co;
-    background-position: center;
+    background: url("image/bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #home .inner-width{
@@ -91,10 +101,10 @@
 
 @keyframes textanim {
     from {
-        content: "dxtstd";
+        content: "Denta";
     }
     to {
-        content: "Denta"
+        content: "dxtstd"
     }
 }
 
@@ -117,6 +127,24 @@
     font-size: 15px;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 26px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
 #testing {
     margin-top: 10px;
     margin-bottom: 50px;
@@ -134,3 +162,28 @@
 .clock {
     font-size: 20px
 }
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button_test {
+    background-color: #dddddd; 
+    color: black;
+}
+
+.button_test:hover {
+    background-color: var(--clr);
+    border: 2px solid black;
+}
+
