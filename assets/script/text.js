@@ -8,6 +8,7 @@ const text = [
     'dxtstd',
     'newbie programmer'
 ]
+
 let indexText = 0
 
 const textAnimID = document.getElementById('textAnim')
@@ -20,7 +21,7 @@ const loopTextAnim = async function () {
     let textAnimAfter = ""
     for await(const letter of textAnim.split('')) {
         textAnimAfter += letter
-        await sleep(0.30)
+        await sleep(0.35)
         document.getElementById('textAnim').innerText = `${textAnimBefore}${textAnimAfter}`
         textAnimLength --
     }
@@ -31,7 +32,7 @@ const loopTextAnim = async function () {
         textAnimLength ++
         textAnimAfter = textAnimAfter.split('').reverse().splice(1).reverse().join('')
         document.getElementById('textAnim').innerText = `${textAnimBefore}${textAnimAfter}`
-        await sleep(0.10)
+        await sleep(0.20)
     }
     
     indexText ++
