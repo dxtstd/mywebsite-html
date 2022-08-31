@@ -16,6 +16,15 @@
   --clr: #ffffff;
 }
 
+a {
+    color: blue;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: #2082ff;
+}
+
 .inner-width {
     max-width: 1300px;
     margin: auto;
@@ -29,6 +38,8 @@
     display: flex;
     overflow: hidden;
     background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    transition: .3s linear;
 }
 
 .navbar .inner-width{
@@ -39,7 +50,7 @@
 
 
 .navbar a {
-    padding: 18px 18px;
+    padding: 16px 20px;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -114,14 +125,9 @@
 }
 
 #about {
-    margin-top: 10px;
-    margin-bottom: 50px;
+ margin: 10px 10px;
 }
 
-#about .title {
-    font-size: 30px;
-    text-align: center;
-}
 
 #about p {
     font-size: 15px;
@@ -148,11 +154,6 @@
 #testing {
     margin-top: 10px;
     margin-bottom: 50px;
-}
-
-#testing .title {
-    font-size: 30px;
-    text-align: center;
 }
 
 #testing p {
@@ -186,5 +187,10 @@
 .button_test:hover {
     background-color: var(--clr);
     border: 2px solid black;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
 }
 

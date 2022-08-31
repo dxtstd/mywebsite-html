@@ -1,9 +1,3 @@
-async function sleep(s) {
-    return new Promise((res, rej) => {
-        setTimeout(res, s*1000)
-    })
-}
-
 let oldDate = Date.now()
 async function loopClock() {
     const date = new Date()
@@ -11,7 +5,7 @@ async function loopClock() {
        oldDate = Date.now()
        document.getElementById('clock').innerHTML = new Date()
     }
-    await sleep(0.5)
+    await sleep(0.25)
     loopClock()
 }
 
