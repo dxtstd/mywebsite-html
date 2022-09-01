@@ -16,18 +16,18 @@
         let textAnimAfter = ""
         for await(const letter of textAnim.split('')) {
         textAnimAfter += letter
-            await sleep(0.35)
+            await sleep(0.15)
             document.getElementById('textAnim').innerText = `${textAnimBefore}${textAnimAfter}`
             textAnimLength --
         }
         
-        await sleep(textAnim.length*0.5)
+        await sleep(5)
         
         while (textAnimLength < (textAnim.length + 1)) {
             textAnimLength ++
             textAnimAfter = textAnimAfter.split('').reverse().splice(1).reverse().join('')
             document.getElementById('textAnim').innerText = `${textAnimBefore}${textAnimAfter}`
-            await sleep(0.20)
+            await sleep(0.075)
         }
         
         indexText ++
