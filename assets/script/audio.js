@@ -1,6 +1,6 @@
 (function() {
     let isPlayed = false
-    const Timeout = 2*1000
+    const Timeout = 1*1000
     const play = function () {
         const audio_1 = document.getElementById('audio_1')
         audio_1.play()
