@@ -6,7 +6,7 @@
         audio_1.play().then(() => {
             isPlayed = true
         }).catch(err => {
-            console.error(err)
+            console.error()
         })
     }
     window.addEventListener('load', function () {
