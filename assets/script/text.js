@@ -1,7 +1,8 @@
 (function () {
     const text = [
         'dxtstd',
-        'newbie programmer'
+        'newbie programmer',
+        'anime'
     ]
     
     let indexText = 0 

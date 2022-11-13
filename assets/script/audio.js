@@ -12,5 +12,11 @@
                 isPlayed = true
             }
         })
+        window.addEventListener('scroll', function () {
+            if (!isPlayed) {
+                setTimeout(play, Timeout)
+                isPlayed = true
+            }
+        })
     })
 })();
